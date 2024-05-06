@@ -5,69 +5,121 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="19"
-9        android:targetSdkVersion="33" />
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
 10    <!--
 11         The INTERNET permission is required for development. Specifically,
 12         the Flutter tool needs it to communicate with the running application
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/webskitters/Desktop/practice_app/android/app/src/debug/AndroidManifest.xml:6:5-66
-15-->/Users/webskitters/Desktop/practice_app/android/app/src/debug/AndroidManifest.xml:6:22-64
+15-->/Users/webskitters/Desktop/practice_lcommunity/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/webskitters/Desktop/practice_lcommunity/android/app/src/debug/AndroidManifest.xml:6:22-64
 16
-17    <application
-18        android:name="android.app.Application"
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.6.0] /Users/webskitters/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
-20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-22        android:label="practice_app" >
-23        <activity
-24            android:name="com.example.practice_app.MainActivity"
-25            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-26            android:exported="true"
-27            android:hardwareAccelerated="true"
-28            android:launchMode="singleTop"
-29            android:theme="@style/LaunchTheme"
-30            android:windowSoftInputMode="adjustResize" >
-31
-32            <!--
-33                 Specifies an Android theme to apply to this Activity as soon as
-34                 the Android process has started. This theme is visible to the user
-35                 while the Flutter UI initializes. After that, this theme continues
-36                 to determine the Window background behind the Flutter UI.
-37            -->
-38            <meta-data
-39                android:name="io.flutter.embedding.android.NormalTheme"
-40                android:resource="@style/NormalTheme" />
-41
-42            <intent-filter>
-43                <action android:name="android.intent.action.MAIN" />
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-46            </intent-filter>
-47        </activity>
-48        <!--
-49             Don't delete the meta-data below.
-50             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-51        -->
-52        <meta-data
-53            android:name="flutterEmbedding"
-54            android:value="2" />
-55
-56        <uses-library
-56-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-57            android:name="androidx.window.extensions"
-57-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-58            android:required="false" />
-58-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-59        <uses-library
-59-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-60            android:name="androidx.window.sidecar"
-60-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-61            android:required="false" />
-61-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-62    </application>
-63
-64</manifest>
+17    <permission
+17-->[androidx.core:core:1.12.0] /Users/webskitters/.gradle/caches/transforms-3/b370ecd39798a61ca78b3976853dae0a/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+18        android:name="com.example.practice_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.12.0] /Users/webskitters/.gradle/caches/transforms-3/b370ecd39798a61ca78b3976853dae0a/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.12.0] /Users/webskitters/.gradle/caches/transforms-3/b370ecd39798a61ca78b3976853dae0a/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.example.practice_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.12.0] /Users/webskitters/.gradle/caches/transforms-3/b370ecd39798a61ca78b3976853dae0a/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.12.0] /Users/webskitters/.gradle/caches/transforms-3/b370ecd39798a61ca78b3976853dae0a/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+22
+23    <application
+24        android:name="android.app.Application"
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.12.0] /Users/webskitters/.gradle/caches/transforms-3/b370ecd39798a61ca78b3976853dae0a/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+28        android:label="practice_app" >
+29        <activity
+30            android:name="com.example.practice_app.MainActivity"
+31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+32            android:exported="true"
+33            android:hardwareAccelerated="true"
+34            android:launchMode="singleTop"
+35            android:theme="@style/LaunchTheme"
+36            android:windowSoftInputMode="adjustResize" >
+37
+38            <!--
+39                 Specifies an Android theme to apply to this Activity as soon as
+40                 the Android process has started. This theme is visible to the user
+41                 while the Flutter UI initializes. After that, this theme continues
+42                 to determine the Window background behind the Flutter UI.
+43            -->
+44            <meta-data
+45                android:name="io.flutter.embedding.android.NormalTheme"
+46                android:resource="@style/NormalTheme" />
+47
+48            <intent-filter>
+49                <action android:name="android.intent.action.MAIN" />
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+52            </intent-filter>
+53        </activity>
+54        <!--
+55             Don't delete the meta-data below.
+56             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+57        -->
+58        <meta-data
+59            android:name="flutterEmbedding"
+60            android:value="2" />
+61
+62        <uses-library
+62-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/880a66cf4ae8ae026fee2686f16a9f93/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+63            android:name="androidx.window.extensions"
+63-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/880a66cf4ae8ae026fee2686f16a9f93/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+64            android:required="false" />
+64-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/880a66cf4ae8ae026fee2686f16a9f93/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+65        <uses-library
+65-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/880a66cf4ae8ae026fee2686f16a9f93/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+66            android:name="androidx.window.sidecar"
+66-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/880a66cf4ae8ae026fee2686f16a9f93/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+67            android:required="false" />
+67-->[androidx.window:window:1.0.0-beta04] /Users/webskitters/.gradle/caches/transforms-3/880a66cf4ae8ae026fee2686f16a9f93/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+68
+69        <activity
+69-->[com.google.android.gms:play-services-auth:20.7.0] /Users/webskitters/.gradle/caches/transforms-3/462517b8c65a7f91259cde26945f117d/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+70            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+70-->[com.google.android.gms:play-services-auth:20.7.0] /Users/webskitters/.gradle/caches/transforms-3/462517b8c65a7f91259cde26945f117d/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+71            android:excludeFromRecents="true"
+71-->[com.google.android.gms:play-services-auth:20.7.0] /Users/webskitters/.gradle/caches/transforms-3/462517b8c65a7f91259cde26945f117d/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+72            android:exported="false"
+72-->[com.google.android.gms:play-services-auth:20.7.0] /Users/webskitters/.gradle/caches/transforms-3/462517b8c65a7f91259cde26945f117d/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+73            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+73-->[com.google.android.gms:play-services-auth:20.7.0] /Users/webskitters/.gradle/caches/transforms-3/462517b8c65a7f91259cde26945f117d/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+74        <!--
+75            Service handling Google Sign-In user revocation. For apps that do not integrate with
+76            Google Sign-In, this service will never be started.
+77        -->
+78        <service
+78-->[com.google.android.gms:play-services-auth:20.7.0] /Users/webskitters/.gradle/caches/transforms-3/462517b8c65a7f91259cde26945f117d/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+79            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+79-->[com.google.android.gms:play-services-auth:20.7.0] /Users/webskitters/.gradle/caches/transforms-3/462517b8c65a7f91259cde26945f117d/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+80            android:exported="true"
+80-->[com.google.android.gms:play-services-auth:20.7.0] /Users/webskitters/.gradle/caches/transforms-3/462517b8c65a7f91259cde26945f117d/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+81            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+81-->[com.google.android.gms:play-services-auth:20.7.0] /Users/webskitters/.gradle/caches/transforms-3/462517b8c65a7f91259cde26945f117d/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+82            android:visibleToInstantApps="true" />
+82-->[com.google.android.gms:play-services-auth:20.7.0] /Users/webskitters/.gradle/caches/transforms-3/462517b8c65a7f91259cde26945f117d/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+83
+84        <activity
+84-->[com.google.android.gms:play-services-base:18.0.1] /Users/webskitters/.gradle/caches/transforms-3/f4fd805fe140efeeb9198f0589b317aa/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+85            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+85-->[com.google.android.gms:play-services-base:18.0.1] /Users/webskitters/.gradle/caches/transforms-3/f4fd805fe140efeeb9198f0589b317aa/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+86            android:exported="false"
+86-->[com.google.android.gms:play-services-base:18.0.1] /Users/webskitters/.gradle/caches/transforms-3/f4fd805fe140efeeb9198f0589b317aa/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+87            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+87-->[com.google.android.gms:play-services-base:18.0.1] /Users/webskitters/.gradle/caches/transforms-3/f4fd805fe140efeeb9198f0589b317aa/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+88
+89        <meta-data
+89-->[com.google.android.gms:play-services-basement:18.2.0] /Users/webskitters/.gradle/caches/transforms-3/181773274af758c67573d5d386dedb3a/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+90            android:name="com.google.android.gms.version"
+90-->[com.google.android.gms:play-services-basement:18.2.0] /Users/webskitters/.gradle/caches/transforms-3/181773274af758c67573d5d386dedb3a/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
+91            android:value="@integer/google_play_services_version" />
+91-->[com.google.android.gms:play-services-basement:18.2.0] /Users/webskitters/.gradle/caches/transforms-3/181773274af758c67573d5d386dedb3a/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+92    </application>
+93
+94</manifest>

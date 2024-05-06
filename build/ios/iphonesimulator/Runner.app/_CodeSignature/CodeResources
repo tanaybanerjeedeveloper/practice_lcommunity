@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		Dpj+arQNzNemmIWOgGf+rOwKuC0=
+		Qzp5x0ZpyugqskLthGjjAsdyRSI=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		MzWtdt6ymNfo2NMleN0uKX2K5KE=
+		j3OUgWq+zulYmU8saTGoGyLDQ9I=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		V1KKk57FSNCtQqR8E6bb3N8NTXU=
+		nWxl4+8ePA4LRfDW2sw44hwQH5w=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -184,6 +184,18 @@
 		<data>
 		Ubat0LvE4LUgCwHeyl0Anx2vnzk=
 		</data>
+		<key>Frameworks/smart_auth.framework/Info.plist</key>
+		<data>
+		RhnXIIwyrhFDrWJNHDASF9ZIjwE=
+		</data>
+		<key>Frameworks/smart_auth.framework/_CodeSignature/CodeResources</key>
+		<data>
+		1dVZxjt5m2GACkBtKVOVvPB8l0s=
+		</data>
+		<key>Frameworks/smart_auth.framework/smart_auth</key>
+		<data>
+		F34ieYcBOOOScejGtGVrWQsMyhw=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		j2a3nEDBH4KOXX871e9tlYidnfo=
@@ -269,7 +281,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K+jfub63Jt/PD3iZNynjJmuIsN3DFPhfcD5pnm9KiKc=
+			qibc1BapOzXUdeAprE9+dtWU28gNoY6VEtekdOat0Fk=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -283,7 +295,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bNMp1FrhxCjZ1ggrEL2lFz2rx7z9ATnpZJn3PGryH/Q=
+			T3/GXFSHpfcAjPvuB4vgyWP9VwRTtuP2LMR1sHAI3Ag=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -311,7 +323,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RYLTdsondvCP8AEJe8MgcSjdOB4JJJ6+4H/Djd9LmvE=
+			N0P7lk+oKsBkRSePgXAPKSdAsX+kfVkSJPL6oNgoRvI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -508,6 +520,27 @@
 			<key>hash2</key>
 			<data>
 			ZepykIMSjfzhwAcmupMrkaqvXkhza1ZE3TdHjl8odaw=
+			</data>
+		</dict>
+		<key>Frameworks/smart_auth.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			D3qPGysqdHDPcS7oXMvhAgTlYSmPcHErMgEfP+T49ak=
+			</data>
+		</dict>
+		<key>Frameworks/smart_auth.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RG6SSXCgtBkTTCoCSmrJ7/hdAw0xSzupdfpK9OMD8wU=
+			</data>
+		</dict>
+		<key>Frameworks/smart_auth.framework/smart_auth</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9Qm9Y2+EpoAbe539qUBS0PV9BsGqye7FaARSteZ/1W8=
 			</data>
 		</dict>
 	</dict>

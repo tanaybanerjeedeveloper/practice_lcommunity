@@ -1,6 +1,9 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 import 'package:gradient_borders/gradient_borders.dart';
+import 'package:practice_app/screens/screen_b.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +18,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: false,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -156,7 +159,24 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               SizedBox(height: mediaQuery.height * 0.05),
-              Text('data')
+              Text('data'),
+              ElevatedButton(
+                  onPressed: () {
+                    showModalBottomSheet(
+                        isScrollControlled: true,
+                        backgroundColor: Colors.transparent,
+                        context: context,
+                        builder: (context) {
+                          return BackdropFilter(
+                            filter: ImageFilter.blur(
+                              sigmaX: 20,
+                              sigmaY: 20,
+                            ),
+                            child: const ScreenB(),
+                          );
+                        });
+                  },
+                  child: Text('press')),
             ]),
           )
         ],
