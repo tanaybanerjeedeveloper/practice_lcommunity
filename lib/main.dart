@@ -44,16 +44,17 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     final oneSidedBoxshadow = Padding(
-      padding: const EdgeInsets.only(top: 40, left: 40, right: 40),
+      padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
       child: Container(
         decoration: BoxDecoration(
             color: Colors.green,
             borderRadius: BorderRadius.circular(10),
             boxShadow: [
               BoxShadow(
-                color: Colors.red.withOpacity(0.5),
-                blurRadius: 56,
-                offset: Offset(0, 2),
+                color: Color(0xff5B11DC).withOpacity(0.12),
+                blurRadius: 28.1,
+                offset: Offset(0, 52),
+                spreadRadius: -21,
               )
             ]),
       ),
@@ -83,8 +84,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
                     colors: [
-                      Colors.blue.withOpacity(0.5),
-                      Colors.black,
+                      // Colors.blue.withOpacity(0.5),
+                      // Colors.black,
+                      Color(0xff080311).withOpacity(0.9),
+                      Color(0xff0f0cae).withOpacity(0.9)
                     ],
                   )),
                 ),
@@ -105,17 +108,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     oneSidedBoxshadow,
                     Container(
                       decoration: BoxDecoration(
-                          color: Colors.white,
-                          // gradient: LinearGradient(colors: [],),
-                          border: GradientBoxBorder(
-                              width: 1,
-                              gradient: LinearGradient(
-                                  colors: [
-                                    Color(0xff1511DB).withOpacity(0.5),
-                                    Color(0xff1511DB).withOpacity(0),
-                                  ],
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomRight))),
+                        color: Colors.white,
+                        // gradient: LinearGradient(colors: [],),
+                        borderRadius: BorderRadius.circular(20),
+                        border: GradientBoxBorder(
+                          width: 1,
+                          gradient: LinearGradient(
+                              colors: [
+                                Color(0xff1511DB).withOpacity(0.5),
+                                Color(0xff1511DB).withOpacity(0),
+                              ],
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomRight),
+                        ),
+                      ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
