@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pinput/pinput.dart';
+import 'package:gradient_borders/gradient_borders.dart';
 
 void main() {
   runApp(const MyApp());
@@ -102,8 +104,46 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     oneSidedBoxshadow,
                     Container(
-                      decoration: const BoxDecoration(
-                        color: Colors.yellow,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          // gradient: LinearGradient(colors: [],),
+                          border: GradientBoxBorder(
+                              width: 1,
+                              gradient: LinearGradient(
+                                  colors: [
+                                    Color(0xff1511DB).withOpacity(0.5),
+                                    Color(0xff1511DB).withOpacity(0),
+                                  ],
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomRight))),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Center(
+                            child: Pinput(
+                              defaultPinTheme: PinTheme(
+                                width: 57,
+                                height: 44,
+                                textStyle: TextStyle(
+                                    fontSize: 20,
+                                    color: Color.fromRGBO(30, 60, 87, 1),
+                                    fontWeight: FontWeight.w600),
+                                decoration: BoxDecoration(
+                                  color: Color(0xffF4F4F4),
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                              ),
+                              validator: (s) {
+                                return s == '2222' ? null : 'Pin is incorrect';
+                              },
+                              pinputAutovalidateMode:
+                                  PinputAutovalidateMode.onSubmit,
+                              showCursor: true,
+                              onCompleted: (pin) => print(pin),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
